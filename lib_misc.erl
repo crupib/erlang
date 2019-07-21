@@ -16,4 +16,4 @@ pythag(N) ->
         A*A+B*B =:= C*C 
     ].
 perms([]) -> [[]];
-perms(L)  -> [[H|T] || H <- L, T <- perms(L--[H])].
+perms(L) -> [[H|T] || H <- L, T <- perms(L--[H])].
