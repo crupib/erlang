@@ -7,4 +7,4 @@ duplicate(N,Term) when N > 0 ->
    io:fwrite("~w,~n",[Term]),
    [Term|duplicate(N-1,Term)]. 
 start() -> 
-   duplicate(2,a).
+   duplicate(5,'Crupi').
