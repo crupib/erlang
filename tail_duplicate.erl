@@ -8,8 +8,8 @@ tail_duplicate(0,_,List) ->
    List; 
 
 tail_duplicate(N,Term,List) when N > 0 ->
-   io:fwrite("~w,~n",[List]),
-   tail_duplicate(N-1,Term,[Term|List]). 
+   tail_duplicate(N-1,Term,[Term|List]), 
+   io:fwrite("~w,~n",[List]).
 
 start() -> 
   tail_duplicate(5,'Crupi'). 
