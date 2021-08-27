@@ -1,1 +1,1 @@
-erl -noshell -s factorial start -s init stop
+erl -noshell -s $1 start -s init stop
