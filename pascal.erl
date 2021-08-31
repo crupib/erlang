@@ -1,6 +1,7 @@
 -module(pascal).
 -export([triangle/1]).
 %% pascal
+%% pascal triangle
 triangle ( Rows ) -> triangle ([[ 0 , 1 , 0 ]], 1 , Rows ).
 triangle ( List , Count , Rows ) when Count >= Rows -> lists:reverse ( List );
 triangle ( List , Count , Rows ) ->
