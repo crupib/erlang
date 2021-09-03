@@ -1,5 +1,16 @@
 -module(drop).
--export([fall_velocity/1, mps_to_mph/1, mps_to_kph/1]).
-fall_velocity(Distance) -> math:sqrt(2 * 9.8 * Distance).
-mps_to_mph(Mps) -> 2.23693629 * Mps.
-mps_to_kph(Mps) -> 3.6 * Mps.
+-export([drop/0]).
+
+drop() ->
+  receive
+    {From, Planemo,Distance} ->
+     From ! {Planemo, Distance, fall_velocity(Planemo, Distance)},
+     drop()
+end.
+fall_velocity(earth, Distance) when
+Distance >= 0 -> math:sqrt(2 * 9.8 * Distance);
+fall_velocity(moon, Distance) when
+Distance >= 0 -> math:sqrt(2 * 1.6 * Distance);
+fall_velocity(mars, Distance) when
+Distance >= 0 -> math:sqrt(2 * 3.71  * Distance).
+
