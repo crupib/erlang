@@ -1,4 +1,4 @@
--module(planemostorage).
+-module(planemo_storage2).
 -export([setup/0]).
 -include("records.hrl").
 
