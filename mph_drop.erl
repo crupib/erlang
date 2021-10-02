@@ -15,4 +15,4 @@ convert(Drop) ->
      MphVelocity= 2.23693629 * Velocity,
      io:format("On ~p, a fall of ~p meters yields a velocity of ~p mph.~n",[Planemo, Distance, MphVelocity]),
      convert(Drop)
- end.
+end.

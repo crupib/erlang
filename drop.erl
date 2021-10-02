@@ -1,6 +1,21 @@
 -module(drop).
--export([setup/0]).
+-export([drop/0, setup/0, fall_velocity/2]).
 -include("records.hrl").
+
+drop() ->
+ setup(),
+ handle_drops().
+
+handle_drops() ->
+ receive
+  {From, Planemo, Distance} ->
+  From ! {Planemo, Distance, fall_velocity(Planemo, Distance)},
+  handle_drops()
+ end.
+
+fall_velocity(Planemo, Distance) when Distance >= 0 -> 
+ {atomic, [P | _]} = mnesia:transaction(fun() -> mnesia:read(planemo,Planemo) end),
+  math:sqrt(2 * P#planemo.gravity * Distance).
 
 setup() ->
  mnesia:create_schema([node()]),
