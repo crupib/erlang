@@ -1,11 +1,3 @@
-%%%-------------------------------------------------------------------
-%%% @author williamcrupi
-%%% @copyright (C) 2019, <COMPANY>
-%%% @doc
-%%%
-%%% @end
-%%% Created : 18. Oct 2019 6:35 PM
-%%%-------------------------------------------------------------------
 -module(cases).
 -export([start/0,insert/2,beach/1]).
 insert(X,[]) ->
@@ -47,4 +39,3 @@ io:nl(),
 U = insert(X,[3,4]),
 io:fwrite("~w~n",[U]),
 io:nl().
-
