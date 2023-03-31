@@ -1,15 +1,16 @@
 -module(what_the_if).
--export([mygoodif/2,heh_fine/0,oh_god/1,help_me/1,a/0,b/0,c/0]).
-heh_fine() ->
-    if 1 =:= 1 ->
-        works
-    end,
-    if 1 =:= 2; 1 =:= 1 ->
-        works
-    end,
-    if 1 =:= 2, 1 =:= 1 ->
-        fails
-    end.
+-export([mygoodif/2,oh_god/1,help_me/1,a/0,b/0,c/0]).
+%%-export([mygoodif/2,heh_fine/0,oh_god/1,help_me/1,a/0,b/0,c/0]).
+%heh_fine() ->
+%    if 1 =:= 1 ->
+%        works
+%    end,
+%    if 1 =:= 2; 1 =:= 1 ->
+%        works
+%    end,
+%    if 1 =:= 2, 1 =:= 1 ->
+%        fails
+%    end.
 oh_god(N) ->
     if N =:= 2 -> might_succeed;
     true -> always_does  %% This is Erlang's if's 'else!'
