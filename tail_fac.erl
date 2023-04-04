@@ -1,4 +1,4 @@
--modulei(tail_fac).
+-module(tail_fac).
 -export([tail_fac/1,tail_fac/2,start/0]). 
 
 tail_fac(N) -> tail_fac(N,1). 
