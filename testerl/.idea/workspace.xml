@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="05e0ef31-b115-4d22-a15e-4a891c550bc2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../calc/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../calc/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../calc/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../calc/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../calc/.idea/emacs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../calc/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../calc/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../calc/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../calc/calc.beam" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../calc/calc.erl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../calc/calc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../calc/erl_crash.dump" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/emacs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testerl.erl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testerl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tree.beam" beforeDir="false" afterPath="$PROJECT_DIR$/../tree.beam" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tree.erl" beforeDir="false" afterPath="$PROJECT_DIR$/../tree.erl" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="CLEAR_OUTPUT_DIRECTORY" value="false" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Erlang Module" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="2tlellmp" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2QWeL2ommtxf24K36lVE5bMxdL2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="testerl.start" type="ErlangApplicationRunConfiguration" factoryName="Erlang" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="testerl" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="debugOptions">
+        <ErlangDebugOptions>
+          <option name="autoUpdateModulesNotToInterpret" value="true" />
+          <option name="modulesNotToInterpret">
+            <set />
+          </option>
+        </ErlangDebugOptions>
+      </option>
+      <option name="erlFlags" value="" />
+      <option name="moduleAndFunction" value="testerl start" />
+      <option name="params" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="useTestCodePath" value="false" />
+      <option name="workDirectory" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="--illegal-access=deny" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="" />
+      <setting name="debug" value="false" />
+      <env name="GROOVY_TURN_OFF_JAVA_WARNINGS" value="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Erlang Application.testerl.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05e0ef31-b115-4d22-a15e-4a891c550bc2" name="Changes" comment="" />
+      <created>1685473704327</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685473704327</updated>
+      <workItem from="1685473705393" duration="223000" />
+      <workItem from="1685476902306" duration="1247000" />
+      <workItem from="1685558043832" duration="393000" />
+      <workItem from="1685561129153" duration="21000" />
+      <workItem from="1685561253357" duration="30000" />
+      <workItem from="1685561409408" duration="29000" />
+      <workItem from="1685561684974" duration="89000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

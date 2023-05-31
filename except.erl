@@ -1,0 +1,2 @@
+-module (exceptions).
+-compile(export_all).
