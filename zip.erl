@@ -9,3 +9,4 @@ lenient_zip([X|Xs],[Y|Ys]) -> [{X,Y}|lenient_zip(Xs,Ys)].
 zip(X,Y) -> reverse(zip(X,Y,[])).
 zip([],[],Acc) -> Acc;
 zip([X|Xs],[Y|Ys], Acc) -> zip(Xs,Ys, [{X,Y}|Acc]).
+%% hello %%
