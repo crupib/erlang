@@ -9,7 +9,17 @@
 -module(kitchen).
 -author("williamcrupi").
 %% API
--export([start/0,fridge2/1]).
+-export([init/0, start/1,fridge2/1,store/2, take/2]).
+store(Pid, Food) ->
+    Pid ! {self(), {store,Food}},
+    receive
+      {Pid, Msg} -> Msg
+    end.
+take (Pid, Food) ->
+     Pid ! {self(), {take, Food}},
+     receive
+       {Pid, Msg} -> Msg
+     end.
 
 fridge2(FoodList) ->
     receive
@@ -33,9 +43,12 @@ fridge2(FoodList) ->
       terminate ->
         ok
     end.
-start() ->
-  Pid = spawn(kitchen, fridge2,[[bacon_soda]]),
-  Pid ! {self(),{store, milk}},
-  Pid ! {self(),{store, bacon}},
-  Pid ! {self(),{take, bacon}},
-  Pid ! {self(),{take, turkey}}.
+
+start(FoodList) ->
+  spawn(?MODULE,fridge2, [FoodList]).
+init() ->
+  Pid = kitchen:start([rhubarb, dog, hotdog]),
+  kitchen:take(Pid, dog),
+  kitchen:take(Pid, dog).
+
+
