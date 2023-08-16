@@ -9,7 +9,7 @@
 -module(kitchen).
 -author("williamcrupi").
 %% API
--export([init/0, start/1,fridge2/1,store/2, take/2]).
+-export([init/0, start/1,fridge2/1,store/2, take/2, store2/2,take2/2]).
 store(Pid, Food) ->
     Pid ! {self(), {store,Food}},
     receive
@@ -20,6 +20,21 @@ take (Pid, Food) ->
      receive
        {Pid, Msg} -> Msg
      end.
+take2 (Pid, Food) ->
+  Pid ! {self(), {take, Food}},
+  receive
+    {Pid, Msg} -> Msg
+  after 3000 ->
+    io:format("Timeout~n"),
+    timeout
+  end.
+store2(Pid, Food) ->
+  Pid ! {self(), {store,Food}},
+  receive
+    {Pid, Msg} -> Msg
+  after 3000 ->
+    timeout
+  end.
 
 fridge2(FoodList) ->
     receive
@@ -47,8 +62,9 @@ fridge2(FoodList) ->
 start(FoodList) ->
   spawn(?MODULE,fridge2, [FoodList]).
 init() ->
-  Pid = kitchen:start([rhubarb, dog, hotdog]),
-  kitchen:take(Pid, dog),
-  kitchen:take(Pid, dog).
-
-
+ Pid = kitchen:start([rhubarb, dog, hotdog]),
+ kitchen:take(Pid, dog),
+ kitchen:store(Pid, dog),
+ kitchen:take(Pid, hotdog),
+ exit(Pid,"On purpose"),
+ kitchen:take2(Pid,dog).
