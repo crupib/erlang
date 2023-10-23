@@ -23,7 +23,6 @@ cancel(Pid) ->
         {'DOWN', Ref, process, Pid, _Reason} ->
             ok
     end.
-
 %%% Event's innards
 init(Server, EventName, DateTime) ->
     loop(#state{server=Server,
