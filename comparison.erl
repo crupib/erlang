@@ -1,0 +1,9 @@
+-module(comparison).
+-export([start/0]).
+start()->
+  io:format("~w~n",[10==20]),
+  io:format("~w~n",[10/=20]),
+  io:format("~w~n",[10<20]),
+  io:format("~w~n",[10=<20]),
+  io:format("~w~n",[10>20]),
+  io:format("~w~n",[10>=20]).
